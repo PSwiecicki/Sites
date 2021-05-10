@@ -56,14 +56,21 @@ figcaption {
 
 section {
     margin: 40px auto 20px auto;
-    width: 500px;
+    width: 600px;
 }
 
 li{
-    font-size: 1.2em;
+    width: 600px;
     text-align: justify;
+    font-size: 1.2em;
     font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 10px 0 10px 0;
+    transition: font-size 0.5s, width 0.5s;
+}
+
+li:hover {
+    font-size: 1.3em;
+    width: 650px;
 }
 
 a {
