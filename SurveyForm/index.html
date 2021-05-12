@@ -6,8 +6,10 @@
         <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
+        <header>
             <h1 id="title">Survey for volunteers</h1>
+        </header>
+        <main>
             <p id="description">If you would like to help doctors fight coronavirus, complete the following survey</p>
             <form id="survey-form">
                 <div class="form-group">
@@ -46,29 +48,29 @@
                 </div>
                 <fieldset class="fieldset" >
                     <legend class="survey-label">Have you had contact with person infected by coronavirus?</legend>
-                    <label for="yes1">
-                        <input id="yes1" type="radio" name="infected-contact" value="yes">Yes
+                    <label for="yes-contact">
+                        <input id="yes-contact" type="radio" name="infected-contact" value="yes">Yes
                     </label>
-                    <label for="no1">
-                        <input id="no1" type="radio" name="infected-contact" value="no" checked>No
+                    <label for="no-contact">
+                        <input id="no-contact" type="radio" name="infected-contact" value="no" checked>No
                     </label>
                 </fieldset>
                 <fieldset class="fieldset" >
                     <legend class="survey-label">Have you been abroad in the last two weeks?</legend>
-                    <label for="yes2">
-                        <input id="yes2" type="radio" name="was-abroad" value="yes">Yes
+                    <label for="yes-abroad">
+                        <input id="yes-abroad" type="radio" name="was-abroad" value="yes">Yes
                     </label>
-                    <label for="no2">
-                        <input id="no2" type="radio" name="was-abroad" value="no" checked>No
+                    <label for="no-abroad">
+                        <input id="no-abroad" type="radio" name="was-abroad" value="no" checked>No
                     </label>
                 </fieldset>
                 <fieldset class="fieldset" >
                     <legend class="survey-label">Do you have any symptoms? (cough, headache, dyspnoea, fever) </legend>
-                    <label for="yes3">
-                        <input id="yes3" type="radio" name="have-symptoms" value="yes">Yes
+                    <label for="yes-symptoms">
+                        <input id="yes-symptoms" type="radio" name="have-symptoms" value="yes">Yes
                     </label>
-                    <label for="no3">
-                        <input id="no3" type="radio" name="have-symptoms" value="no" checked>No
+                    <label for="no-symptoms">
+                        <input id="no-symptoms" type="radio" name="have-symptoms" value="no" checked>No
                     </label>
                 </fieldset>
                 <fieldset class="fieldset" >
@@ -87,19 +89,25 @@
                     <label  id="dropdown-label"
                             class="survey-label"
                             for="dropdawn">Which place do you prefer?</label>
-                    <select id="dropdown"
+                    <input  id="dropdown"
+                            type="text"
                             class="survey-input"
-                            placehold="Select">
-                        <option value="Walbrzych">Wałbrzych</option>
-                        <option value="Kalisz">Kalisz</option>
-                        <option value="Swidnica">Świdnica</option>
-                        <option value="Jaslo">Jasło</option>
-                    </select>
+                            list="cities">
+                    </input>
+                    <datalist id="cities">
+                        <option value="Grudziądz">
+                        <option value="Jelenia Góra">
+                        <option value="Wrocław">
+                        <option value="Wałbrzych">
+                        <option value="Kalisz">
+                        <option value="Świdnica">
+                        <option value="Jasło">
+                    </datalist>
                 </div>
                 <div class="form-group">
                     <label  id="message-label"
                             class="survey-label"
-                            for="message"> Message: </label>
+                            for="message">Message: </label>
                     <textarea id="message"
                               class="survey-input"
                               placeholder="If you want add something, write it here."></textarea>
@@ -111,5 +119,8 @@
                 </div>
             </form>
         </main>
+        <footer>
+            <p>Thank you <a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener" >FreeCodeCamp</a> for knowledge and ideas!!</p>
+        </footer>
     </body>
 </html>
