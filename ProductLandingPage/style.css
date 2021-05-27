@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: sakurata;
+    src: url(fonts/Sakurata-DOGnE.otf);
+}
+
+header {
+    margin: 0px auto;
+    width: 950px;
+}
+
+.logo-and-name {
+    color: green;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    float: left;
+}
+
+h1 {
+    color: #3F3F3F;
+    font-family: sakurata;
+    font-size: 80px;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    margin: 0px auto;
+}
+
+nav li {
+    width: 200px;
+    padding: 5px 0px 5px    ;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.2em;
+}
