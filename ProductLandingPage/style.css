@@ -9,47 +9,88 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
     margin: 0px auto;
-    width: 950px;
-}
-
-.logo-and-name {
-    color: green;
-    width: 100%;
-    margin-bottom: 15px;
 }
 
 .logo {
     height: 100px;
     width: 100px;
     margin: 10px;
-    float: left;
 }
 
 h1 {
     color: #3F3F3F;
     font-family: sakurata;
     font-size: 80px;
+    margin-bottom: 15px;
 }
 
 nav {
+    background-color: #3F3F3F;
     display: flex;
     align-content: center;
-
+    margin-bottom: 20px;
 }
 
 nav ul{
     display: flex;
-    flex-direction: row;
     align-content: center;
     list-style: none;
     margin: 0px auto;
 }
 
 nav li {
+    display: inline;
     width: 200px;
-    padding: 5px 0px 5px    ;
-    border: 1px solid black;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    font-size: 1.35em;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-decoration: none;
     text-align: center;
+}
+
+li a:hover {
+    background: linear-gradient(90deg, rgb(63,63,63) 0%, rgb(95,95,95) 20%, rgb(95,95,95) 80%, rgb(63,63,63) 100%);
+}
+
+section {
+    width: 800px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #3F3F3F;
+    font-size: 44px;
+    font-family: sakurata;
+}
+
+p {
+    margin: 10px;
+    margin-bottom: 0px;
+    text-indent: 4em;
+    text-align: justify;
     font-size: 1.2em;
+}
+
+section ul {
+    width: 600px;
+    text-align: justify;
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+section ul li::before {
+    margin: 0px auto;
+    display: block;
+    content: url(images/list-img.png);
+    width: 50px;
 }
