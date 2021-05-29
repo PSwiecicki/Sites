@@ -88,9 +88,58 @@ section ul {
     margin: 0px auto;
     padding-top: 20px;
 }
+
 section ul li::before {
     margin: 0px auto;
     display: block;
     content: url(images/list-img.png);
     width: 50px;
+}
+
+.products {
+    align-items: top;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.product {
+    margin: 0 auto;
+    display: block;
+    width: 220px;
+    border: 5px solid #3F3F3F;
+    border-radius: 5px 5px 15px 5px;
+    text-align: center;
+}
+figure {
+    height: 130px;
+}
+
+.product-photo {
+
+    object-fit:scale-down;
+    height: 100px;
+    width: 200px;
+}
+
+figure figcaption {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1.1em;
+    text-indent: 0;
+}
+
+.product a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 10px;
+}
+
+.product:hover {
+    background-color: #F4F4F4;
 }
