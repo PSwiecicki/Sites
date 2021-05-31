@@ -150,3 +150,19 @@ iframe {
     width: 560px;
     height: 315px;
 }
+
+footer {
+    background-color: #3F3F3F;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer > p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
