@@ -14,44 +14,47 @@
     </header>
     <nav>
         <ul>
-            <li><a href="">Introduction</a></li>
-            <li><a href="">What you should already know</a></li>
-            <li><a href="">Where to find JavaScript information</a></li>
-            <li><a href="">What is JavaScript</a></li>
-            <li><a href="">JavaScript and Java</a></li>
-            <li><a href="">JavaScript and the ECMAScript specification</a></li>
-            <li><a href="">Getting started with JavaScript</a></li>
-            <li><a href="">HelloWorld</a></li>
-            <li><a href="">Basics</a></li>
-            <li><a href="">Comments</a></li>
-            <li><a href="">Declarations</a></li>
-            <li><a href="">Variables</a></li>
-            <li><a href="">Declaring variables</a></li>
-            <li><a href="">Evaluating variables</a></li>
-            <li><a href="">Variables scope</a></li>
-            <li><a href="">Variables hoisting</a></li>
-            <li><a href="">Function hoisting</a></li>
-            <li><a href="">Global variables</a></li>
-            <li><a href="">Constants</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#what-you-should">What you should already know</a></li>
+            <li><a href="#where-to-find">Where to find JavaScript information</a></li>
+            <li><a href="#what-is-javascript">What is JavaScript</a></li>
+            <li><a href="#js-and-java">JavaScript and Java</a></li>
+            <li><a href="#js-and-ecmascript">JavaScript and the ECMAScript specification</a></li>
+            <li><a href="#js-doc-and-ecmascript-spec">JS documentation vs ECMAScript specification</a></li>
+            <li><a href="#getting-started-with-js">Getting started with JavaScript</a></li>
+            <li><a href="#single-line-input">Single-line input in the Web Console</a></li>
+            <li><a href="#multi-line-input">Multi-line input in the Web Console</a></li>
+            <li><a href="#hello-world">HelloWorld</a></li>
+            <li><a href="#basics">Basics</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#declarations">Declarations</a></li>
+            <li><a href="#variables">Variables</a></li>
+            <li><a href="#declaring-variables">Declaring variables</a></li>
+            <li><a href="#evaluating-variables">Evaluating variables</a></li>
+            <li><a href="#variable-scope">Variables scope</a></li>
+            <li><a href="#variable-hoisting">Variables hoisting</a></li>
+            <li><a href="#function-hoisting">Function hoisting</a></li>
+            <li><a href="#global-variables">Global variables</a></li>
+            <li><a href="#constants">Constants</a></li>
         </ul>
     </nav>
     <main role="main">
         <article>
             <section>
-                <h2>Introduction</h2>
+                <h2 id="introduction">Introduction</h2>
                 <p>The JavaScript Guide shows you how to use JavaScript and gives an overview of the language. If you need exhaustive information about a language feature, have a look at the JavaScript reference.</p>
             </section>
             <section>
-                <h2>What you should already know</h2>
+                <h2 id="what-you-should">What you should already know</h2>
                 <p>This guide assumes you have the following basic background:</p>
-                <ul>
+                <ui>
                     <li>A general understanding of the Internet and the <abbr title="World Wide Web">WWW</abbr>.</li>
                     <li>Good working knowledge of <abbr title="HyperText Markup Language">HTML</abbr>.</li>
                     <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-                </ul>
+                </ui>
             </section>
             <section>
-                <h2>Where to find JavaScript information</h2>
+                <h2 id="where-to-find">Where to find JavaScript information</h2>
                 <p>The JavaScript documentation on MDN includes the following:</p>
                 <ul>
                     <li>Learn Web Development provides information for beginners and introduces basic concepts of programming and the Internet.</li>
@@ -61,7 +64,7 @@
                 <p>If you are new to JavaScript, start with the articles in the learning area and the JavaScript Guide. Once you have a firm grasp of the fundamentals, you can use the JavaScript Reference to get more details on individual objects and statements.</p>
             </section>
             <section>
-                <h2>What is JavaScript?</h2>
+                <h2 id="what-is-javascript">What is JavaScript?</h2>
                 <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
                 <p>JavaScript contains a standard library of objects, such as <strong><mark>Array</mark></strong>, <strong><mark>Date</mark></strong>, and <strong><mark>Math</mark></strong>, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
                 <ul>
@@ -71,7 +74,7 @@
                 <p>This means that in the browser, JavaScript can change the way the webpage <abbr title="Document Object Model">DOM</abbr> looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
             </section>
             <section>
-                <h2>JavaScript and Java</h2>
+                <h2 id="js-and-java">JavaScript and Java</h2>
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
                 <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
                 <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
@@ -98,22 +101,22 @@
                 </table>
             </section>
             <section>
-                <h2>JavaScript and the ECMAScript specification</h2>
+                <h2 id="js-and-ecmascript">JavaScript and the ECMAScript specification</h2>
                 <p>JavaScript is standardized at Ecma International — the European association for standardizing information and communication systems (ECMA was formerly an acronym for the European Computer Manufacturers Association) to deliver a standardized, international programming language based on JavaScript. This standardized version of JavaScript, called <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script, behaves the same way in all applications that support the standard. Companies can use the open standard language to develop their implementation of JavaScript. The <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script standard is documented in the <abbr title="European Computer Manufacturers Association">ECMA</abbr>-262 specification. See New in JavaScript to learn more about different versions of JavaScript and <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification editions.</p>
                 <p>The <abbr title="European Computer Manufacturers Association">ECMA</abbr>-262 standard is also approved by the <abbr title="International Organization for Standardization">ISO</abbr> as ISO-16262. You can also find the specification on the <abbr title="European Computer Manufacturers Association">ECMA</abbr> International website. The <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification does not describe the <abbr title="Document Object Model">DOM</abbr>, which is standardized by the <abbr title="World Wide Web Consortium">W3C</abbr> and/or <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>. The <abbr title="Documeny Object Model">DOM</abbr> defines the way in which <abbr title="HyperText Markup Language">HTML</abbr> document objects are exposed to your script. To get a better idea about the different technologies that are used when programming with JavaScript, consult the article JavaScript technologies overview.</p>
                 
-                <h3>JavaScript documentation versus the <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification</h3>
+                <h3 id="js-doc-and-ecmascript-spec">JavaScript documentation versus the <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification</h3>
                 <p>The <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification is a set of requirements for implementing <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script. It is useful if you want to implement standards-compliant language features in your ECMAScript implementation or engine (such as SpiderMonkey in Firefox, or V8 in Chrome).</p>
                 <p>The <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script document is not intended to help script programmers. Use the JavaScript documentation for information when writing scripts.</p>
                 <p>The <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification uses terminology and syntax that may be unfamiliar to a JavaScript programmer. Although the description of the language may differ in <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script, the language itself remains the same. JavaScript supports all functionality outlined in the <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script specification.</p>
                 <p>The JavaScript documentation describes aspects of the language that are appropriate for a JavaScript programmer.</p>
             </section>
             <section>
-                <h2>Getting started with JavaScript</h2>
+                <h2 id="getting-started-with-js">Getting started with JavaScript</h2>
                 <p>Getting started with JavaScript is easy: all you need is a modern Web browser. This guide includes some JavaScript features which are only currently available in the latest versions of Firefox, so using the most recent version of Firefox is recommended.</p>
                 <p>The Web Console tool built into Firefox is useful for experimenting with JavaScript; you can use it into two modes: single-line input mode, and multi-line input mode.</p>
                 
-                <h3>Single-line input in the Web Console</h3>
+                <h3 id="single-line-input">Single-line input in the Web Console</h3>
                 <p>The Web Console shows you information about the currently loaded Web page, and also includes a JavaScript interpreter that you can use to execute JavaScript expressions in the current page.</p>
                 <p>To open the Web Console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> on Windows and Linux or <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>K</kbd> on Mac), open the <strong>Tools</strong> menu in Firefox, and select <strong>"Developer&nbsp;▶&nbsp;Web&nbsp;Console"</strong>.</p>
                 <p>The Web Console appears at the bottom of the browser window. Along the bottom of the console is an input line that you can use to enter JavaScript, and the output appears in the panel above:</p>
@@ -126,10 +129,10 @@
 }
 console.<span class="function">log</span>(<span class="function">eval</span>(<span class="string">'3 + 5'</span>))</pre>
                 </code>
-                <h3>Multi-line input in the Web Console</h3>
+                <h3 id="multi-line-input">Multi-line input in the Web Console</h3>
                 <p>The single-line input mode of the Web Console is great for quick testing of JavaScript expressions, but although you can execute multiple lines, it's not very convenient for that. For more complex JavaScript, you can use the multi-line line input mode.</p>
 
-                <h3>Hello world</h3>
+                <h3 id="hello-world">Hello world</h3>
                 <p>To get started with writing JavaScript, open the Web Console in multi-line mode, and write your first "Hello world" JavaScript code:</p>
                 <code>
                     <pre>
@@ -153,7 +156,7 @@ console.<span class="function">log</span>(<span class="function">eval</span>(<sp
                 </ol>
             </section>
             <section>
-                <h2>Basics</h2>
+                <h2 id="basics">Basics</h2>
                 <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.</p>
                 <p>JavaScript is <strong>case-sensitive</strong> and uses the <strong>Unicode</strong> character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
                 <code>
@@ -170,7 +173,7 @@ let Früh = "foobar"</pre>
                 <p>The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. (Spaces, tabs, and newline characters are considered whitespace.)</p>
             </section>
             <section>
-                <h2>Comments</h2>
+                <h2 id="comments">Comments</h2>
                 <p>The syntax of comments is the same as in C++ and in many other languages:</p>
                 <code>
                     <pre>
@@ -189,236 +192,223 @@ let Früh = "foobar"</pre>
                 </aside>
             </section>
             <section>
-                <h2>Declarations</h2>
+                <h2 id="declarations">Declarations</h2>
                 <p>JavaScript has three kinds of variable declarations.</p>
                 <dl>
-                    <dt>var</dt>
+                    <dt><span class="keyword inline-code">var</span></dt>
                     <dd>Declares a variable, optionally initializing it to a value.</dd>
-                    <dt>let</dt>
+                    <dt><span class="keyword inline-code">let</span></dt>
                     <dd>Declares a block-scoped, local variable, optionally initializing it to a value.</dd>
-                    <dt>const</dt>
+                    <dt><span class="keyword inline-code">const</span></dt>
                     <dd>Declares a block-scoped, read-only named constant.</dd>
                 </dl>
 
-                <h3>Variables</h3>
+                <h3 id="variables">Variables</h3>
                 <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
                 <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).</p>
                 <p>Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).</p>
-                <p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see this blog post.) You can also use the Unicode escape sequences as characters in identifiers.</p>
-                Some examples of legal names are Number_hits, temp99, $credit, and _name.
+                <p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers.</p>
+                Some examples of legal names are <span class="variable inline-code">Number_hits</span>, <span class="variable inline-code">temp99</span>, <span class="variable inline-code">$credit</span>, and <span class="variable inline-code">_name</span>.
 
-                <h3>Declaring variables</h3>
+                <h3 id="declaring-variables">Declaring variables</h3>
                 <p>You can declare a variable in two ways:</p>
                 <ul>
-                    <li>With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables, depending on the execution context.</li>
-                    With the keyword const or let. For example, let y = 13. This syntax can be used to declare a block-scope local variable. (See Variable scope below.)
+                    <li>With the keyword <strong>var</strong>. For example, <span class="inline-code"><span class="keyword">var</span> <span class="variable">x</span> = 42</span>. This syntax can be used to declare both local and global variables, depending on the execution context.</li>
+                    <li> the keyword <strong>const</strong> or <strong>let</strong>. For example, <span class="inline-code"><span class="keyword">let</span> <span class="variable">y</span> = 13</span>. This syntax can be used to declare a block-scope local variable. (See Variable scope below.)</li>
                 </ul>
-                <p>You can declare variables to unpack values from Object Literals using the Destructuring Assignment syntax. For example, let { bar } = foo. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object foo. </p>
-                <p>You can also assign a value to a variable For example, x = 42. This form creates an undeclared global variable. It also generates a strict JavaScript warning. Undeclared global variables can often lead to unexpected behavior. Thus, it is discouraged to use undeclared global variables.</p>
+                <p>You can declare variables to unpack values from Object Literals using the Destructuring Assignment syntax. For example, <span class="inline-code"><span class="keyword">let</span> { <span class="variable">bar</span> } = <span class ="variable">foo</span></span>. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object foo. </p>
+                <p>You can also assign a value to a variable For example, <span class="inline-code"><span class="variable">x</span> = 42</span>. This form creates an undeclared global variable. It also generates a strict JavaScript warning. Undeclared global variables can often lead to unexpected behavior. Thus, it is discouraged to use undeclared global variables.</p>
 
-                <h3>Evaluating variables</h3>
-                <p>A variable declared using the var or let statement with no assigned value specified has the value of undefined.</p>
+                <h3 id="evaluating-variables">Evaluating variables</h3>
+                <p>A variable declared using the <span class="keyword inline-code">var</span> or <span class="keyword inline-code">let</span> statement with no assigned value specified has the value of <span class="keyword inline-code">undefined</span>.</p>
                 <p>An attempt to access an undeclared variable results in a ReferenceError exception being thrown:</p>
 
                 <code>
                     <pre>
-                        var a;
-console.log('The value of a is ' + a); // The value of a is undefined
+<span class="keyword">var</span> <span class="variable">a</span>;
+console.<span class="function">log</span>(<span class="string">'The value of a is '</span> + <span class="variable">a</span>); <span class="comment">// The value of a is undefined</span>
 
-console.log('The value of b is ' + b); // The value of b is undefined
-var b;
-// This one may puzzle you until you read 'Variable hoisting' below
+console.<span class="function">log</span>(<span class="string">'The value of b is '</span> + <span class="variable">b</span>); <span class="comment">// The value of b is undefined</span>
+<span class="keyword">var</span> <span class="variable">b</span>;
+<span class="comment">// This one may puzzle you until you read 'Variable hoisting' below</span>
 
-console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined
+console.<span class="function">log</span>(<span class="string">'The value of c is '</span> + <span class="variable">c</span>); <span class="comment">// Uncaught ReferenceError: c is not defined</span>
 
-let x;
-console.log('The value of x is ' + x); // The value of x is undefined
+<span class="keyword">let</span> <span class="variable">x</span>;
+console.<span class="function">log</span>(<span  class="string">'The value of x is '</span> + <span class="variable">x</span>); <span class="comment">// The value of x is undefined</span>
 
-console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined
-let y; 
-                    </pre>
+console.<span class="function">log</span>(<span class="string">'The value of y is '</span> + <span class="variable">y</span>); <span class="comment">// Uncaught ReferenceError: y is not defined</span>
+<span class="keyword">let</span> <span class="variable">y</span>;</pre>
                 </code>
                 <p>You can use undefined to determine whether a variable has a value. In the following code, the variable input is not assigned a value, and the if statement evaluates to true.</p>
                 <code>
                     <pre>
-                        var input;
-if (input === undefined) {
-  doThis();
-} else {
-  doThat();
-}
-                    </pre>
+<span class="keyword">var</span> <span class="variable">input</span>;
+<span class="keyword">if</span> (<span class="variable">input</span> === <span class="keyword">undefined</span>) {
+    <span class="function">doThis</span>();
+} 
+<span class="keyword">else</span> {
+    <span class="function">doThat</span>();
+}</pre>
                 </code>
                 <p>The undefined value behaves as false when used in a boolean context. For example, the following code executes the function myFunction because the myArray element is undefined:</p>
                 <code>
                     <pre>
-                        var myArray = [];
-if (!myArray[0]) myFunction();
-                    </pre>
+<span class="keyword">var</span> <span class="variable">myArray</span> = [];
+<span class="keyword">if</span> (!<span class="variable">myArray</span>[0]) <span class="function">myFunction</span>();</pre>
                 </code>
                 <p>The undefined value converts to NaN when used in numeric context.</p>
                 <code>
                     <pre>
-                        var a;
-a + 2;  // Evaluates to NaN
-                    </pre>
+<span class="keyword">var</span> <span class="variable">a</span>;
+<span class="variable">a</span> + 2;  <span class="comment">// Evaluates to NaN</span></pre>
                 </code>
                 <p>When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts. For example:</p>
                 <code>
                     <pre>
-                        var n = null;
-console.log(n * 32); // Will log 0 to the console
-                    </pre>
+<span class="keyword">var</span> <span class="variable">n</span> = <span class="keyword">null</span>;
+console.<span class="function">log</span>(<span class="variable">n</span> * 32); <span class="comment">// Will log 0 to the console</span></pre>
                 </code>
                 
-                <h3>Variable scope</h3>
+                <h3 id="variable-scope">Variable scope</h3>
                 <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
-                <p>JavaScript before ECMAScript 2015 does not have block statement scope. Rather, a variable declared within a block is local to the function (or global scope) that the block resides within.</p>
+                <p>JavaScript before <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script 2015 does not have block statement scope. Rather, a variable declared within a block is local to the function (or global scope) that the block resides within.</p>
                 <p>For example, the following code will log 5, because the scope of x is the global context (or the function context if the code is part of a function). The scope of x is not limited to the immediate if statement block.</p>
                 <code>
                     <pre>
-                        if (true) {
-                            var x = 5;
-                          }
-                          console.log(x);  // x is 5
-                    </pre>
+<span class="keyword">if</span> (<span class="keyword">true</span>) {
+    <span class="keyword">var</span> <span class="variable">x</span> = 5;
+}
+console.<span class="function">log</span>(<span class="variable">x</span>);  <span class="comment">// x is 5</span></pre>
                 </code>
-                <p>This behavior changes when using the let declaration (introduced in ECMAScript 2015).</p>
+                <p>This behavior changes when using the let declaration (introduced in <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script 2015).</p>
                 <code>
                     <pre>
-                        if (true) {
-                            let y = 5;
-                          }
-                          console.log(y);  // ReferenceError: y is not defined
-                    </pre>
+<span class="keyword">if</span> (<span class="keyword">true</span>) {
+    <span class="keyword">let</span> <span class="variable">y</span> = 5;
+}
+console.<span class="function">log</span>(<span class="variable">y</span>);  <span class="comment">// ReferenceError: y is not defined</span></pre>
                 </code>
                 
-                <h3>Variable hoisting</h3>
+                <h3 id="variable-hoisting">Variable hoisting</h3>
                 <p>Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception.</p>
                 <p>This concept is known as hoisting. Variables in JavaScript are, in a sense, "hoisted" (or "lifted") to the top of the function or statement. However, variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.</p>
                 <code>
                     <pre>
-                        /**
+<span class="comment">/**
  * Example 1
- */
-console.log(x === undefined); // true
-var x = 3;
+ */</span>
+console.<span class="function">log</span>(<span class="variable">x</span> === <span class="keyword">undefined</span>); <span class="comment">// true</span>
+<span class="keyword">var</span> <span class="variable">x</span> = 3;
 
-/**
+<span class="comment">/**
  * Example 2
  */
-// will return a value of undefined
-var myvar = 'my value';
+// will return a value of undefined</span>
+<span class="keyword">var</span> <span class="variable">myvar</span> = <span class="string">'my value'</span>;
 
-(function() {
-  console.log(myvar); // undefined
-  var myvar = 'local value';
-})();
-                    </pre>
+(<span class="keyword">function</span>() {
+    console.<span class="function">log</span>(<span class="variable">myvar</span>); <span class="comment">// undefined</span>
+    <span class="keyword">var</span> <span class="variable">myvar</span> = <span class="string">'local value'</span>;
+})();</pre>
                 </code>
                 <p>The above examples will be interpreted the same as:</p>
                 <code>
                     <pre>
-                        /**
+<span class="comment">/**
  * Example 1
- */
-var x;
-console.log(x === undefined); // true
-x = 3;
+ */</span>
+<span class="keyword">var</span> <span class="variable">x</span>;
+console.<span class="function">log</span>(<span class="variable">x</span> === <span class="keyword">undefined</span>); <span class="comment">// true</span>
+<span class="variable">x</span> = 3;
 
-/**
+<span class="comment">/**
  * Example 2
- */
-var myvar = 'my value';
+ */</span>
+<span class="keyword">var</span> <span class="variable">myvar</span> = <span class="string">'my value'</span>;
 
-(function() {
-  var myvar;
-  console.log(myvar); // undefined
-  myvar = 'local value';
-})();
-                    </pre>
+(<span class="keyword">function</span>() {
+    <span class="keyword">var</span> <span class="variable">myvar</span>;
+    console.<span class="function">log</span>(<span class="variable">myvar</span>); <span class="comment">// undefined</span>
+    <span class="variable">myvar</span> = <span class="string">'local value'</span>;
+})();</pre>
                 </code>
                 <p>Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.</p>
-                <p>In ECMAScript 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.</p>
+                <p>In <abbr title="European Computer Manufacturers Association">ECMA</abbr>Script 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.</p>
                 <code>
                     <pre>
-                        console.log(x); // ReferenceError
-let x = 3;
-                    </pre>
+console.<span class="function">log</span>(<span class="variable">x</span>); <span class="comment">// ReferenceError</span>
+<span class="keyword">let</span> <span class="variable">x</span> = 3;</pre>
                 </code>
 
-                <h3>Function hoisting</h3>
+                <h3 id="function-hoisting">Function hoisting</h3>
                 <p>In the case of functions, only function declarations are hoisted—but not the function expressions.</p>
                 <code>
                     <pre>
-                        /* Function declaration */
+<span class="comment">/* Function declaration */</span>
 
-foo(); // "bar"
+<span class="function">foo</span>(); <span class="comment">// "bar"</span>
 
-function foo() {
-  console.log('bar');
+<span class="keyword">function</span> <span class="function">foo</span>() {
+    console.<span class="function">log</span>(<span class="string">'bar'</span>);
 }
 
-/* Function expression */
+<span class="comment">/* Function expression */</span>
 
-baz(); // TypeError: baz is not a function
+<span class="function">baz</span>(); <span class="comment">// TypeError: baz is not a function</span>
 
-var baz = function() {
-  console.log('bar2');
-};
-                    </pre>
+<span class="keyword">var</span> <span class="function">baz</span> = <span class="keyword">function</span>() {
+  console.<span class="function">log</span>(<span class="string">'bar2'</span>);
+};</pre>
                 </code>
                 
-                <h3>Global variables</h3>
+                <h3 id="global-variables">Global variables</h3>
                 <p>Global variables are in fact properties of the global object.</p>
                 <p>In web pages, the global object is window, so you can set and access global variables using the window.variable syntax.</p>
                 <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
 
-                <h3>Constants</h3>
-                <p>You can create a read-only, named constant with the const keyword.</p>
+                <h3 id="constants">Constants</h3>
+                <p>You can create a read-only, named constant with the <span class="inline-code keyword">const</span> keyword.</p>
                 <p>The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign ($), and can contain alphabetic, numeric, or underscore characters.</p>
                 <code>
-                    const PI = 3.14;
+                    <pre>
+<span class="keyword">const</span> <span class="variable">PI</span> = 3.14;</pre>
                 </code>
                 <p>A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.</p>
                 <p>The scope rules for constants are the same as those for let block-scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
                 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
                 <code>
                     <pre>
-                        // THIS WILL CAUSE AN ERROR
-function f() {};
-const f = 5;
+<span class="comment">// THIS WILL CAUSE AN ERROR</span>
+<span class="keyword">function</span> <span class="function">f</span>() {};
+<span class="keyword">const</span> <span class="function">f</span> = 5;
 
-// THIS WILL CAUSE AN ERROR TOO
-function f() {
-  const g = 5;
-  var g;
-
-  //statements
-}
-                    </pre>
+<span class="comment">// THIS WILL CAUSE AN ERROR TOO</span>
+<span class="keyword">function</span> <span class="function">f</span>() {
+    <span class="keyword">const</span> <span class="variable">g</span> = 5;
+    <span class="keyword">var</span> <span class="variable">g</span>;
+    <span class="comment">//statements</span>
+}</pre>
                 </code>
                 <p>However, the properties of objects assigned to constants are not protected, so the following statement is executed without problems.</p>
                 <code>
                     <pre>
-                        const MY_OBJECT = {'key': 'value'};
-MY_OBJECT.key = 'otherValue';
-                    </pre>
+<span class="keyword">const</span> <span  class="variable">MY_OBJECT</span> = {<span class="string">'key'</span>: <span class="string">'value'</span>};
+<span class="variable">MY_OBJECT</span>.<span class="variable">key</span> = <span class="string">'otherValue'</span>;</pre>
                 </code>
                 <p>Also, the contents of an array are not protected, so the following statement is executed without problems.</p>
                 <code>
                     <pre>
-                        const MY_ARRAY = ['HTML','CSS'];
-MY_ARRAY.push('JAVASCRIPT');
-console.log(MY_ARRAY); //logs ['HTML','CSS','JAVASCRIPT'];
-                    </pre>
+<span class="keyword">const</span> <span class="variable">MY_ARRAY</span> = [<span class="string">'HTML'</span>,<span class="string">'CSS'</span>];
+<span class="variable">MY_ARRAY</span>.<span class="function">push</span>(<span class="string">'JAVASCRIPT'</span>);
+console.<span class="function">log</span>(<span class="variable">MY_ARRAY</span>); <span class="comment">//logs ['HTML','CSS','JAVASCRIPT'];</span></pre>
                 </code>
             </section>
         </article>
     </main>
     <footer>
         <p>Thank you <a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener" >FreeCodeCamp</a> for knowledge and ideas!!</p>
-        <p>All documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#where_to_find_javascript_information"  target="_blank" rel="nofollow noopener">this MDN site</a>, where you can find much more information.</p>
+        <p>All documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#where_to_find_javascript_information"  target="_blank" rel="nofollow noopener">MDN site</a>. You can find there much more information.</p>
     </footer>
 </body>
 </html>
