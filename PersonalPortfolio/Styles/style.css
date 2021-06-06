@@ -1,0 +1,16 @@
+header {
+    height: 40px;
+}
+
+nav li {
+    float: left;
+    text-align: center;
+}
+
+nav ul a {
+    display: block;
+    height: 40px;
+    width: 100px;
+    color: red;
+    border: 1px solid black;
+}
