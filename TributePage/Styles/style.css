@@ -1,18 +1,16 @@
-* {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font: inherit;
-    font-size: 100%;
+body {
+    background: #CCCCCC url(../Images/background.png) top left repeat;
 }
 
-body {
-    background: #CCCCCC url(images/background.png) top left repeat;
+header {
+    width: 100%;
+    height: 100vh;
+    background: #AAAAAA url(../Images/fig-background.png) top left repeat;
 }
 
 h1 {
+    padding: 40px;
     font-size: 64px;
-    margin: 30px 0 5px 0;
     text-align: center;
     color: #3d3d3d;
     font-family: "DejaVu Serif", Georgia, serif;
@@ -27,6 +25,7 @@ h2 {
 }
 
 header p {
+    font-size: 1.2  rem;
     text-align: center;
     font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
@@ -37,8 +36,7 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #AAAAAA url(images/fig-background.png) top left repeat;
-    max-width: 600px;
+    max-width: 700px;
     border-radius: 20px;
     padding: 20px 0 5px 0;
 }
@@ -47,9 +45,11 @@ img {
     max-width: 95%;
     margin-bottom: 2px;
     border-radius: 20px;
+    box-shadow: 0 0 30px black;
 }
 
 figcaption {
+    margin-top: 10px;
     font-size: 80%;
     text-align: center;
 }
@@ -57,6 +57,22 @@ figcaption {
 section {
     margin: 40px auto 20px auto;
     width: 600px;
+}
+ul {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
 li{
@@ -68,10 +84,18 @@ li{
     transition: font-size 0.5s, width 0.5s;
 }
 
-li:hover {
-    font-size: 1.3em;
-    width: 650px;
-}
+li::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: gray;
+    border: 4px solid black;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
 
 a {
     text-decoration: none;
@@ -85,36 +109,4 @@ footer p {
 
 .year {
     font-weight: 800;
-}
-
-@media(max-width:600px) {
-    figure {
-        margin: 0;
-        max-width: max-content;
-    }
-}
-
-@media(max-width:500px) {
-    section {
-        max-width: 100%;
-        margin: 20px auto 10px auto;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-        margin: 0px 0 10px 0;
-    }
-    p {
-        font-size: 10px;
-    }
-    ul {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    li {
-        font-size: 10px;
-    }
 }
