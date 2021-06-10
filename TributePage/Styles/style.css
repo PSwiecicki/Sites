@@ -11,7 +11,6 @@ header {
 section {
     margin: 0px auto;
     width: 800px;
-    background: magenta;
 }
 h1 {
     padding: 40px;
@@ -64,8 +63,7 @@ figcaption {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 20px;
-    background: lightgreen;
+    padding-top: 20px;;
 }
 
 .timeline::after {
@@ -82,7 +80,6 @@ figcaption {
 
 .timeline-container {
     position: relative;
-    background: lightcoral;
     margin-bottom: 25px;
 }
 
@@ -93,7 +90,7 @@ figcaption {
     left: 130px;
     height: 40px;
     width: 40px;
-    background: green;
+    background: black;
     border-radius: 50%;
 }
 
@@ -101,7 +98,6 @@ figcaption {
     display: block;
     float: left;
     width: 100px;
-    background: greenyellow;
     font-size: 2.5rem;
     margin-left: 10px;
     margin-right: 70px;
@@ -111,7 +107,6 @@ figcaption {
     display: inline-block;
     width: 500px;
     padding: 20px;
-    background: hotpink ;
 }
 li{
     width: 600px;
