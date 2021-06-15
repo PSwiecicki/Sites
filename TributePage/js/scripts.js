@@ -14,3 +14,13 @@ timeline.addEventListener("mouseout", function( event ) {
         target.style.animationName = "none";
     }
   }, false  );
+
+function showHide(){
+    let imageSrc = document.querySelector(".ipad-disp img");
+
+    console.log(imageSrc.style.visibility);
+    if(window.getComputedStyle(imageSrc).visibility === "visible")
+        imageSrc.style.visibility = "hidden";
+    else
+        imageSrc.style.visibility = "visible";
+}

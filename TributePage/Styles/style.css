@@ -61,13 +61,14 @@ figcaption {
 .ipad {
     box-sizing: border-box;
     position: relative;
-    max-width: 90%;
+    max-width: 800px;
     margin: 0px auto;
     border: 2px solid #262626;
     border-radius: 20px;
     background-color: #FFF;
     padding: 40px 60px;
 }
+
 .ipad-camera {
     position: absolute;
     top: 50%;
@@ -80,7 +81,12 @@ figcaption {
     background-color: black;
 }
 
+.ipad-disp {
+    background-color: black;
+}
+
 .ipad img {
+    visibility: visible;
     background-color: black;
     border: 3px solid black;
     box-sizing: border-box;
