@@ -86,7 +86,6 @@ figcaption {
 }
 
 .ipad img {
-    visibility: visible;
     background-color: black;
     border: 3px solid black;
     box-sizing: border-box;
@@ -278,5 +277,9 @@ footer p {
 
     footer p {
         font-size: 0.7rem;
+    }
+
+    .ipad-disp img {
+        visibility: visible !important;
     }
 }
