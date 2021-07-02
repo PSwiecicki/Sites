@@ -112,3 +112,9 @@ a {
     text-decoration: none;
     color: rgb(160, 218, 233);
 }
+
+p.input-messagebox {
+    font-size: 0.80rem;
+    text-align: left;
+    display: none;
+}

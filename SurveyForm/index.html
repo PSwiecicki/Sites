@@ -18,40 +18,22 @@
                 <p>If you would like to help doctors fight coronavirus, complete the following survey</p>
                 <form>
                     <div class="form-group">
-                        <label  id="name-label"
-                                class="survey-label"
-                                for="name">Name: </label>
-                        <input  id="name"
-                                class="survey-input"
-                                name="name"
-                                type="text"
-                                placeholder="Enter your name."
-                                required>
+                        <label  id="name-label" class="survey-label" for="name">Name: </label>
+                        <input  id="name" class="survey-input" name="name" type="text" placeholder="Enter your name." required>
+                        <p id="name-messagebox" class="input-messagebox"></p>
                     </div>
                     <div class="form-group">
-                        <label  id="email-label"
-                                class="survey-label"
-                                for="email">Email: </label>
-                        <input  id="email"
-                                class="survey-input"
-                                name="email"
-                                type="email"
-                                placeholder="Enter your e-mail address."
-                                required>
+                        <label  id="email-label" class="survey-label" for="email">Email: </label>
+                        <input  id="email" class="survey-input" name="email" type="email"
+                                placeholder="Enter your e-mail address." required>
+                        <p id="email-messagebox" class="input-messagebox"></p>
                     </div>
                     <div class="form-group">
-                        <label  id="number-label"
-                                class="survey-label"
-                                for="number">Phone number: </label>
-                        <input  id="number"
-                                class="survey-input"
-                                name="number"
-                                type="phone"
-                                placeholder="Enter your phone number."
-                                min=100000000
-                                max=999999999>
+                        <label  id="number-label" class="survey-label" for="number">Phone number: </label>
+                        <input  id="number" class="survey-input" name="number" type="phone" placeholder="Enter your phone number." required>
+                        <p id="number-messagebox" class="input-messagebox"></p>
                     </div>
-                    <fieldset class="fieldset" >
+                    <fieldset class="fieldset">
                         <legend class="survey-label">Have you had contact with person infected by coronavirus?</legend>
                         <label for="yes-contact">
                             <input id="yes-contact" type="radio" name="infected-contact" value="yes">Yes
@@ -91,14 +73,8 @@
                         </label>
                     </fieldset>
                     <div class="form-group">
-                        <label  id="dropdown-label"
-                                class="survey-label"
-                                for="dropdawn">Which place do you prefer?</label>
-                        <input  id="dropdown"
-                                type="text"
-                                class="survey-input"
-                                list="cities">
-                        </input>
+                        <label  id="city-label" class="survey-label" for="dropdawn">Which place do you prefer?</label>
+                        <input  id="city" type="text" class="survey-input" list="cities" required></input>
                         <datalist id="cities">
                             <option value="Grudziądz">
                             <option value="Jelenia Góra">
@@ -108,6 +84,7 @@
                             <option value="Świdnica">
                             <option value="Jasło">
                         </datalist>
+                        <p id="city-messagebox" class="input-messagebox"></p>
                     </div>
                     <div class="form-group">
                         <label  id="message-label"
@@ -129,4 +106,5 @@
                 <p>Thank you <a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener" >FreeCodeCamp</a> for knowledge and ideas!!</p>
             </footer>
     </body>
+    <script src="./scripts.js"></script>
 </html>
